@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "ModelFit — Local LLM Hardware Compatibility Dataset"
+message: "If you use this dataset, please cite ModelFit (modelfit.io)."
+type: dataset
+authors:
+  - name: "ModelFit"
+    website: "https://modelfit.io"
+url: "https://github.com/Wecko-ai/modelfit-hardware-dataset"
+repository-code: "https://github.com/Wecko-ai/modelfit-hardware-dataset"
+license: CC-BY-4.0
