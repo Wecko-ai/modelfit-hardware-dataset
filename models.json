@@ -3,17 +3,17 @@
   "description": "Which local AI models (Ollama) fit which hardware, by parameter size, quantization, and estimated memory load. tok/s and load figures are estimates, not measured benchmarks.",
   "source": "https://modelfit.io/data/",
   "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
-  "attribution": "ModelFit — https://modelfit.io/",
+  "attribution": "ModelFit: https://modelfit.io/",
   "methodology": {
     "ramBudgetRatio": 0.7,
     "note": "A model fits a device when its estimatedLoadGb is within ~70% of unified memory (RAM/VRAM). Q4_K_M needs roughly 0.6 GB per billion parameters."
   },
-  "updated": "2026-06-11",
+  "updated": "2026-07-02",
   "counts": {
-    "models": 83,
-    "local": 58,
-    "cloud": 25,
-    "families": 15
+    "models": 106,
+    "local": 75,
+    "cloud": 31,
+    "families": 20
   },
   "models": [
     {
@@ -261,7 +261,7 @@
     {
       "model": "Claude 3.5 Sonnet",
       "family": "Claude",
-      "params": 120,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -272,7 +272,7 @@
     {
       "model": "Claude 3.7 Sonnet",
       "family": "Claude",
-      "params": 140,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -283,7 +283,7 @@
     {
       "model": "Claude 3 Opus",
       "family": "Claude",
-      "params": 220,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -294,7 +294,7 @@
     {
       "model": "Claude 4 Opus",
       "family": "Claude",
-      "params": 240,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -481,7 +481,7 @@
     {
       "model": "GPT-4o",
       "family": "OpenAI",
-      "params": 200,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -492,7 +492,7 @@
     {
       "model": "GPT-4o mini",
       "family": "OpenAI",
-      "params": 40,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -503,7 +503,7 @@
     {
       "model": "Claude 4 Sonnet",
       "family": "Claude",
-      "params": 160,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -514,7 +514,7 @@
     {
       "model": "Gemini 2.5 Pro",
       "family": "Google",
-      "params": 175,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -525,7 +525,7 @@
     {
       "model": "Gemini 2.5 Flash",
       "family": "Google",
-      "params": 80,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -547,7 +547,7 @@
     {
       "model": "GLM-5",
       "family": "Zhipu",
-      "params": 32,
+      "params": 744,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -558,7 +558,7 @@
     {
       "model": "GLM-4 Plus",
       "family": "Zhipu",
-      "params": 80,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -877,7 +877,7 @@
     {
       "model": "Claude Opus 4.7",
       "family": "Claude",
-      "params": 260,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -888,7 +888,7 @@
     {
       "model": "Claude Opus 4.8",
       "family": "Claude",
-      "params": 270,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -899,7 +899,7 @@
     {
       "model": "GPT-5.5",
       "family": "OpenAI",
-      "params": 400,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -910,7 +910,7 @@
     {
       "model": "Gemini 3.1 Pro",
       "family": "Google",
-      "params": 300,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
@@ -921,13 +921,266 @@
     {
       "model": "Grok 4.3",
       "family": "xAI",
-      "params": 314,
+      "params": null,
       "quantization": "API",
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "bestFor": "Reasoning, Real-time data, Coding",
       "ollamaCommand": null
+    },
+    {
+      "model": "Gemma 4 12B",
+      "family": "Gemma",
+      "params": 12,
+      "quantization": "Q4_K_M",
+      "minRamGb": 16,
+      "estimatedLoadGb": 8,
+      "runsLocally": true,
+      "bestFor": "Chat, Coding, Multimodal",
+      "ollamaCommand": "ollama run gemma4:12b"
+    },
+    {
+      "model": "Claude Fable 5",
+      "family": "Claude",
+      "params": null,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "runsLocally": false,
+      "bestFor": "Coding, Agentic, Reasoning",
+      "ollamaCommand": null
+    },
+    {
+      "model": "GLM-5.2",
+      "family": "Zhipu",
+      "params": null,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "runsLocally": false,
+      "bestFor": "Coding, Reasoning, Agentic",
+      "ollamaCommand": null
+    },
+    {
+      "model": "Kimi K2.7-Code",
+      "family": "Kimi",
+      "params": 1000,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "runsLocally": false,
+      "bestFor": "Coding, Agentic tasks",
+      "ollamaCommand": null
+    },
+    {
+      "model": "MiniMax M3",
+      "family": "MiniMax",
+      "params": 428,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "runsLocally": false,
+      "bestFor": "Coding, Agentic, Long context",
+      "ollamaCommand": null
+    },
+    {
+      "model": "Qwen3.7-Plus",
+      "family": "Qwen",
+      "params": null,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "runsLocally": false,
+      "bestFor": "Multimodal, Agentic, Vision",
+      "ollamaCommand": null
+    },
+    {
+      "model": "NVIDIA Nemotron 3 Ultra",
+      "family": "Nemotron",
+      "params": 550,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "runsLocally": false,
+      "bestFor": "Reasoning, Agentic, Long context",
+      "ollamaCommand": null
+    },
+    {
+      "model": "NVIDIA Nemotron Cascade 2 30B-A3B",
+      "family": "Nemotron",
+      "params": 30,
+      "quantization": "Q6_K",
+      "minRamGb": 32,
+      "estimatedLoadGb": 24,
+      "runsLocally": true,
+      "bestFor": "Reasoning, Math, Agentic tasks",
+      "ollamaCommand": "ollama run nemotron-cascade-2:30b"
+    },
+    {
+      "model": "Poolside Laguna XS.2",
+      "family": "Laguna",
+      "params": 33,
+      "quantization": "Q4_K_M",
+      "minRamGb": 32,
+      "estimatedLoadGb": 23,
+      "runsLocally": true,
+      "bestFor": "Agentic coding, long-horizon software engineering",
+      "ollamaCommand": "ollama run laguna-xs.2:q4_K_M"
+    },
+    {
+      "model": "Cohere North Mini Code",
+      "family": "North",
+      "params": 30,
+      "quantization": "Q4_K_M",
+      "minRamGb": 24,
+      "estimatedLoadGb": 19,
+      "runsLocally": true,
+      "bestFor": "Agentic coding, repo-scale software engineering",
+      "ollamaCommand": "ollama run north-mini-code-1.0:q4_K_M"
+    },
+    {
+      "model": "GPT-OSS 120B",
+      "family": "GPT-OSS",
+      "params": 117,
+      "quantization": "MXFP4",
+      "minRamGb": 96,
+      "estimatedLoadGb": 65.4,
+      "runsLocally": true,
+      "bestFor": "Reasoning, Coding, Agents",
+      "ollamaCommand": "ollama run gpt-oss:120b"
+    },
+    {
+      "model": "GPT-OSS 20B",
+      "family": "GPT-OSS",
+      "params": 21,
+      "quantization": "MXFP4",
+      "minRamGb": 24,
+      "estimatedLoadGb": 13.8,
+      "runsLocally": true,
+      "bestFor": "Chat, Coding, Reasoning",
+      "ollamaCommand": "ollama run gpt-oss:20b"
+    },
+    {
+      "model": "Qwen3-Next 80B-A3B",
+      "family": "Qwen",
+      "params": 80,
+      "quantization": "Q4_K_M",
+      "minRamGb": 72,
+      "estimatedLoadGb": 50.4,
+      "runsLocally": true,
+      "bestFor": "Chat, Coding, Long Context",
+      "ollamaCommand": "ollama run qwen3-next:80b"
+    },
+    {
+      "model": "Qwen3.6 35B-A3B (Q8)",
+      "family": "Qwen",
+      "params": 35,
+      "quantization": "Q8_0",
+      "minRamGb": 64,
+      "estimatedLoadGb": 38.7,
+      "runsLocally": true,
+      "bestFor": "Reasoning, Coding, Agents",
+      "ollamaCommand": "ollama run qwen3.6:35b-a3b-q8_0"
+    },
+    {
+      "model": "Qwen3.5 35B-A3B Instruct (Q8)",
+      "family": "Qwen",
+      "params": 35,
+      "quantization": "Q8_0",
+      "minRamGb": 64,
+      "estimatedLoadGb": 38.7,
+      "runsLocally": true,
+      "bestFor": "Reasoning, Coding, Agent scenarios",
+      "ollamaCommand": "ollama run qwen3.5:35b-a3b-q8_0"
+    },
+    {
+      "model": "Qwen3.5 9B Instruct (Q8)",
+      "family": "Qwen",
+      "params": 9,
+      "quantization": "Q8_0",
+      "minRamGb": 16,
+      "estimatedLoadGb": 10.7,
+      "runsLocally": true,
+      "bestFor": "Quality, Coding, Reasoning",
+      "ollamaCommand": "ollama run qwen3.5:9b-q8_0"
+    },
+    {
+      "model": "Qwen3.6 27B (Q8)",
+      "family": "Qwen",
+      "params": 27,
+      "quantization": "Q8_0",
+      "minRamGb": 48,
+      "estimatedLoadGb": 30,
+      "runsLocally": true,
+      "bestFor": "Coding, Quality, Long context",
+      "ollamaCommand": "ollama run qwen3.6:27b-q8_0"
+    },
+    {
+      "model": "Gemma 4 12B (Q8)",
+      "family": "Gemma",
+      "params": 12,
+      "quantization": "Q8_0",
+      "minRamGb": 24,
+      "estimatedLoadGb": 12.8,
+      "runsLocally": true,
+      "bestFor": "Chat, Coding, Multimodal",
+      "ollamaCommand": "ollama run gemma4:12b-it-q8_0"
+    },
+    {
+      "model": "Gemma 4 26B-A4B (Q8)",
+      "family": "Gemma",
+      "params": 26,
+      "quantization": "Q8_0",
+      "minRamGb": 48,
+      "estimatedLoadGb": 28.1,
+      "runsLocally": true,
+      "bestFor": "Chat, Coding, Multimodal",
+      "ollamaCommand": "ollama run gemma4:26b-a4b-it-q8_0"
+    },
+    {
+      "model": "Qwen3-Next 80B-A3B (Q8)",
+      "family": "Qwen",
+      "params": 80,
+      "quantization": "Q8_0",
+      "minRamGb": 128,
+      "estimatedLoadGb": 84.8,
+      "runsLocally": true,
+      "bestFor": "Chat, Coding, Long Context",
+      "ollamaCommand": "ollama run qwen3-next:80b-a3b-instruct-q8_0"
+    },
+    {
+      "model": "Qwen3 14B (Q8)",
+      "family": "Qwen",
+      "params": 14,
+      "quantization": "Q8_0",
+      "minRamGb": 24,
+      "estimatedLoadGb": 15.9,
+      "runsLocally": true,
+      "bestFor": "Coding, Quality",
+      "ollamaCommand": "ollama run qwen3:14b-q8_0"
+    },
+    {
+      "model": "Llama 3.3 70B Instruct (Q8)",
+      "family": "Llama",
+      "params": 70,
+      "quantization": "Q8_0",
+      "minRamGb": 128,
+      "estimatedLoadGb": 75,
+      "runsLocally": true,
+      "bestFor": "Quality, Coding",
+      "ollamaCommand": "ollama run llama3.3:70b-instruct-q8_0"
+    },
+    {
+      "model": "Llama 3.3 70B Instruct (Q6)",
+      "family": "Llama",
+      "params": 70,
+      "quantization": "Q6_K",
+      "minRamGb": 96,
+      "estimatedLoadGb": 57.9,
+      "runsLocally": true,
+      "bestFor": "Quality, Coding",
+      "ollamaCommand": "ollama run llama3.3:70b-instruct-q6_K"
     }
   ]
 }
