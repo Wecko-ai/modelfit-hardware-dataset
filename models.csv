@@ -21,10 +21,10 @@ Qwen2.5 Coder 14B,Qwen,14,Q4_K_M,22,11,true,Coding,ollama run qwen2.5-coder:14b
 Llama 3.2 1B Instruct,Llama,1,Q4_K_M,3,1,true,Chat,ollama run llama3.2:1b-instruct-q4_K_M
 Mistral Small 22B,Mistral,22,Q4_K_M,26,17,true,"Coding, Quality",ollama run mistral-small:22b
 Kimi K2 Instruct,Kimi,1000,API,0,0,false,"Quality, Coding",
-Claude 3.5 Sonnet,Claude,120,API,0,0,false,"Coding, Chat",
-Claude 3.7 Sonnet,Claude,140,API,0,0,false,"Coding, Quality",
-Claude 3 Opus,Claude,220,API,0,0,false,"Quality, Analysis",
-Claude 4 Opus,Claude,240,API,0,0,false,"Quality, Coding",
+Claude 3.5 Sonnet,Claude,,API,0,0,false,"Coding, Chat",
+Claude 3.7 Sonnet,Claude,,API,0,0,false,"Coding, Quality",
+Claude 3 Opus,Claude,,API,0,0,false,"Quality, Analysis",
+Claude 4 Opus,Claude,,API,0,0,false,"Quality, Coding",
 Qwen2.5 0.5B Instruct,Qwen,0.5,Q4_K_M,2,0.8,true,"Chat, Mobile",ollama run qwen2.5:0.5b-instruct-q4_K_M
 Gemma 3 1B Instruct,Gemma,1,Q4_K_M,3,1,true,"Chat, Mobile",ollama run gemma3:1b
 Phi-4 Mini 3.8B,Phi,3.8,Q4_K_M,7,3.2,true,"Coding, Chat",ollama run phi4-mini:3.8b
@@ -41,14 +41,14 @@ Gemma 3 27B Instruct,Gemma,27,Q4_K_M,28,21,true,"Quality, Coding",ollama run gem
 DeepSeek-R1 Distill Qwen 7B,DeepSeek,7,Q4_K_M,10,5.5,true,"Reasoning, Coding",ollama run deepseek-r1:7b
 DeepSeek-R1 Distill Qwen 14B,DeepSeek,14,Q4_K_M,22,11,true,"Reasoning, Quality",ollama run deepseek-r1:14b
 DeepSeek-R1 Distill Llama 70B,DeepSeek,70,Q4_K_M,48,42,true,"Reasoning, Quality",ollama run deepseek-r1:70b
-GPT-4o,OpenAI,200,API,0,0,false,"Quality, Coding",
-GPT-4o mini,OpenAI,40,API,0,0,false,"Chat, Speed",
-Claude 4 Sonnet,Claude,160,API,0,0,false,"Coding, Quality",
-Gemini 2.5 Pro,Google,175,API,0,0,false,"Quality, Analysis",
-Gemini 2.5 Flash,Google,80,API,0,0,false,"Speed, Chat",
+GPT-4o,OpenAI,,API,0,0,false,"Quality, Coding",
+GPT-4o mini,OpenAI,,API,0,0,false,"Chat, Speed",
+Claude 4 Sonnet,Claude,,API,0,0,false,"Coding, Quality",
+Gemini 2.5 Pro,Google,,API,0,0,false,"Quality, Analysis",
+Gemini 2.5 Flash,Google,,API,0,0,false,"Speed, Chat",
 DeepSeek-V3,DeepSeek,671,API,0,0,false,"Quality, Coding",
-GLM-5,Zhipu,32,API,0,0,false,"Reasoning, Quality",
-GLM-4 Plus,Zhipu,80,API,0,0,false,"Quality, Analysis",
+GLM-5,Zhipu,744,API,0,0,false,"Reasoning, Quality",
+GLM-4 Plus,Zhipu,,API,0,0,false,"Quality, Analysis",
 Qwen3 235B A22B,Qwen,235,Q4_K_M,192,130,true,"Quality, Reasoning",ollama run qwen3:235b-a22b-q4_K_M
 Mistral Small 3.1,Mistral,24,Q4_K_M,24,15,true,"Chat, Coding",ollama run mistral-small3.1:24b
 DeepSeek-V3-0324,DeepSeek,671,API,0,0,false,"Quality, Coding",
@@ -77,8 +77,31 @@ DeepSeek V4 Flash,DeepSeek,284,API,0,0,false,"Reasoning, Coding, Long context",
 DeepSeek V4 Pro,DeepSeek,1600,API,0,0,false,"Frontier reasoning, Coding",
 Kimi K2.6,Kimi,1000,API,0,0,false,"Coding, Agentic tasks",
 GLM-5.1,Zhipu,744,API,0,0,false,"Coding, Reasoning, Long context",
-Claude Opus 4.7,Claude,260,API,0,0,false,"Coding, Quality, Reasoning",
-Claude Opus 4.8,Claude,270,API,0,0,false,"Coding, Agentic, Reasoning",
-GPT-5.5,OpenAI,400,API,0,0,false,"Quality, Reasoning, Multimodal",
-Gemini 3.1 Pro,Google,300,API,0,0,false,"Multimodal, Long context, Quality",
-Grok 4.3,xAI,314,API,0,0,false,"Reasoning, Real-time data, Coding",
+Claude Opus 4.7,Claude,,API,0,0,false,"Coding, Quality, Reasoning",
+Claude Opus 4.8,Claude,,API,0,0,false,"Coding, Agentic, Reasoning",
+GPT-5.5,OpenAI,,API,0,0,false,"Quality, Reasoning, Multimodal",
+Gemini 3.1 Pro,Google,,API,0,0,false,"Multimodal, Long context, Quality",
+Grok 4.3,xAI,,API,0,0,false,"Reasoning, Real-time data, Coding",
+Gemma 4 12B,Gemma,12,Q4_K_M,16,8,true,"Chat, Coding, Multimodal",ollama run gemma4:12b
+Claude Fable 5,Claude,,API,0,0,false,"Coding, Agentic, Reasoning",
+GLM-5.2,Zhipu,,API,0,0,false,"Coding, Reasoning, Agentic",
+Kimi K2.7-Code,Kimi,1000,API,0,0,false,"Coding, Agentic tasks",
+MiniMax M3,MiniMax,428,API,0,0,false,"Coding, Agentic, Long context",
+Qwen3.7-Plus,Qwen,,API,0,0,false,"Multimodal, Agentic, Vision",
+NVIDIA Nemotron 3 Ultra,Nemotron,550,API,0,0,false,"Reasoning, Agentic, Long context",
+NVIDIA Nemotron Cascade 2 30B-A3B,Nemotron,30,Q6_K,32,24,true,"Reasoning, Math, Agentic tasks",ollama run nemotron-cascade-2:30b
+Poolside Laguna XS.2,Laguna,33,Q4_K_M,32,23,true,"Agentic coding, long-horizon software engineering",ollama run laguna-xs.2:q4_K_M
+Cohere North Mini Code,North,30,Q4_K_M,24,19,true,"Agentic coding, repo-scale software engineering",ollama run north-mini-code-1.0:q4_K_M
+GPT-OSS 120B,GPT-OSS,117,MXFP4,96,65.4,true,"Reasoning, Coding, Agents",ollama run gpt-oss:120b
+GPT-OSS 20B,GPT-OSS,21,MXFP4,24,13.8,true,"Chat, Coding, Reasoning",ollama run gpt-oss:20b
+Qwen3-Next 80B-A3B,Qwen,80,Q4_K_M,72,50.4,true,"Chat, Coding, Long Context",ollama run qwen3-next:80b
+Qwen3.6 35B-A3B (Q8),Qwen,35,Q8_0,64,38.7,true,"Reasoning, Coding, Agents",ollama run qwen3.6:35b-a3b-q8_0
+Qwen3.5 35B-A3B Instruct (Q8),Qwen,35,Q8_0,64,38.7,true,"Reasoning, Coding, Agent scenarios",ollama run qwen3.5:35b-a3b-q8_0
+Qwen3.5 9B Instruct (Q8),Qwen,9,Q8_0,16,10.7,true,"Quality, Coding, Reasoning",ollama run qwen3.5:9b-q8_0
+Qwen3.6 27B (Q8),Qwen,27,Q8_0,48,30,true,"Coding, Quality, Long context",ollama run qwen3.6:27b-q8_0
+Gemma 4 12B (Q8),Gemma,12,Q8_0,24,12.8,true,"Chat, Coding, Multimodal",ollama run gemma4:12b-it-q8_0
+Gemma 4 26B-A4B (Q8),Gemma,26,Q8_0,48,28.1,true,"Chat, Coding, Multimodal",ollama run gemma4:26b-a4b-it-q8_0
+Qwen3-Next 80B-A3B (Q8),Qwen,80,Q8_0,128,84.8,true,"Chat, Coding, Long Context",ollama run qwen3-next:80b-a3b-instruct-q8_0
+Qwen3 14B (Q8),Qwen,14,Q8_0,24,15.9,true,"Coding, Quality",ollama run qwen3:14b-q8_0
+Llama 3.3 70B Instruct (Q8),Llama,70,Q8_0,128,75,true,"Quality, Coding",ollama run llama3.3:70b-instruct-q8_0
+Llama 3.3 70B Instruct (Q6),Llama,70,Q6_K,96,57.9,true,"Quality, Coding",ollama run llama3.3:70b-instruct-q6_K
