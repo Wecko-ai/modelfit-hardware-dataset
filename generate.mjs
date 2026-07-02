@@ -15,7 +15,7 @@ const data = await res.json();
 
 writeFileSync('models.json', JSON.stringify(data, null, 2) + '\n');
 
-const cols = ['model', 'family', 'params', 'quantization', 'minRamGb', 'estimatedLoadGb', 'runsLocally', 'runtimes', 'bestFor', 'ollamaCommand'];
+const cols = ['model', 'family', 'params', 'quantization', 'minRamGb', 'estimatedLoadGb', 'runsLocally', 'openWeights', 'runtimes', 'bestFor', 'ollamaCommand'];
 const esc = (v) => {
   if (Array.isArray(v)) v = v.join('|');
   const s = v === null || v === undefined ? '' : String(v);

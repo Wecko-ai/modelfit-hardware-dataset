@@ -24,7 +24,8 @@ is **<https://modelfit.io/api/dataset/>**.
 - `quantization` — e.g. `Q4_K_M`
 - `minRamGb` — minimum unified memory / VRAM to load it
 - `estimatedLoadGb` — approximate memory footprint at this quantization
-- `runsLocally` — `true` for local (Ollama) models, `false` for cloud-only APIs
+- `runsLocally` — `true` when a registry-verified Ollama build fits at least one consumer RAM tier tracked here (up to 256GB)
+- `openWeights` — `true` when the weights are publicly downloadable. Can be `true` while `runsLocally` is `false`: open-weight giants like NVIDIA Nemotron 3 Ultra (550B, ~190GB at 2-bit) or Kimi K2 exceed every consumer tier
 - `runtimes` — apps the model runs in (`ollama`, `llama.cpp`, `lm-studio`; all local rows are GGUF builds). Pipe-separated in the CSV, empty for cloud rows
 - `bestFor` — primary workloads
 - `ollamaCommand` — exact `ollama run …` command (local models)
