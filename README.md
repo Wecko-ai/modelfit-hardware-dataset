@@ -20,18 +20,21 @@ is **<https://modelfit.io/api/dataset/>**.
 
 - `model` — display name (e.g. `Qwen3.5 9B Instruct`)
 - `family` — model family (Qwen, Llama, Gemma, DeepSeek, …)
-- `params` — parameter count, in billions
+- `params` — parameter count, in billions (`null` when the vendor does not disclose it, e.g. closed API models)
 - `quantization` — e.g. `Q4_K_M`
 - `minRamGb` — minimum unified memory / VRAM to load it
 - `estimatedLoadGb` — approximate memory footprint at this quantization
 - `runsLocally` — `true` for local (Ollama) models, `false` for cloud-only APIs
+- `runtimes` — apps the model runs in (`ollama`, `llama.cpp`, `lm-studio`; all local rows are GGUF builds). Pipe-separated in the CSV, empty for cloud rows
 - `bestFor` — primary workloads
 - `ollamaCommand` — exact `ollama run …` command (local models)
 
 ## Methodology
 
-A model **fits** a device when its `estimatedLoadGb` is within **~70%** of the
-device's unified memory (the rest goes to the OS, context, and KV-cache). At
+A model **fits** a device when its `estimatedLoadGb` is within the memory
+budget: **~70%** of unified memory on machines up to 32GB, scaling linearly to
+**~85%** at 128GB and above (high-RAM Macs can wire more memory to the GPU via
+`iogpu.wired_limit_mb`; the rest goes to the OS, context, and KV-cache). At
 `Q4_K_M`, a model needs roughly **0.6 GB per billion parameters**. Memory-load
 and tokens/sec figures are **estimates, not measured benchmarks**. Local model
 tags are verified against the Ollama registry.

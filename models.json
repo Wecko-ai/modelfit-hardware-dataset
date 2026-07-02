@@ -5,8 +5,9 @@
   "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
   "attribution": "ModelFit: https://modelfit.io/",
   "methodology": {
-    "ramBudgetRatio": 0.7,
-    "note": "A model fits a device when its estimatedLoadGb is within ~70% of unified memory (RAM/VRAM). Q4_K_M needs roughly 0.6 GB per billion parameters."
+    "ramBudgetRatioBase": 0.7,
+    "ramBudgetRatioMax": 0.85,
+    "note": "A model fits a device when its estimatedLoadGb is within the memory budget: ~70% of unified memory up to 32GB, scaling linearly to ~85% at 128GB and above (high-RAM Macs can wire more memory to the GPU). Q4_K_M needs roughly 0.6 GB per billion parameters."
   },
   "updated": "2026-07-02",
   "counts": {
@@ -24,6 +25,11 @@
       "minRamGb": 4,
       "estimatedLoadGb": 1.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Translation",
       "ollamaCommand": "ollama run qwen2.5:1.5b-instruct-q4_K_M"
     },
@@ -35,6 +41,11 @@
       "minRamGb": 6,
       "estimatedLoadGb": 2.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run qwen2.5:3b-instruct-q4_K_M"
     },
@@ -46,6 +57,11 @@
       "minRamGb": 10,
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run qwen2.5:7b-instruct-q4_K_M"
     },
@@ -57,6 +73,11 @@
       "minRamGb": 20,
       "estimatedLoadGb": 11,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Chat",
       "ollamaCommand": "ollama run qwen2.5:14b-instruct-q4_K_M"
     },
@@ -68,6 +89,11 @@
       "minRamGb": 6,
       "estimatedLoadGb": 2.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat",
       "ollamaCommand": "ollama run llama3.2:3b-instruct-q4_K_M"
     },
@@ -79,6 +105,11 @@
       "minRamGb": 12,
       "estimatedLoadGb": 6.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run llama3.1:8b-instruct-q4_K_M"
     },
@@ -90,6 +121,11 @@
       "minRamGb": 14,
       "estimatedLoadGb": 8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run llama3.1:8b-instruct-q5_K_M"
     },
@@ -101,6 +137,11 @@
       "minRamGb": 48,
       "estimatedLoadGb": 42,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding",
       "ollamaCommand": "ollama run llama3.1:70b-instruct-q4_K_M"
     },
@@ -112,6 +153,11 @@
       "minRamGb": 10,
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run mistral:7b-instruct-q4_K_M"
     },
@@ -123,6 +169,11 @@
       "minRamGb": 36,
       "estimatedLoadGb": 30,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Quality",
       "ollamaCommand": "ollama run mixtral:8x7b"
     },
@@ -134,6 +185,11 @@
       "minRamGb": 18,
       "estimatedLoadGb": 9.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Translation",
       "ollamaCommand": "ollama run mistral-nemo:12b"
     },
@@ -145,6 +201,11 @@
       "minRamGb": 5,
       "estimatedLoadGb": 1.8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat",
       "ollamaCommand": "ollama run gemma2:2b-instruct-q4_K_M"
     },
@@ -156,6 +217,11 @@
       "minRamGb": 14,
       "estimatedLoadGb": 7,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run gemma2:9b-instruct-q4_K_M"
     },
@@ -167,6 +233,11 @@
       "minRamGb": 28,
       "estimatedLoadGb": 21,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding",
       "ollamaCommand": "ollama run gemma2:27b-instruct-q4_K_M"
     },
@@ -178,6 +249,11 @@
       "minRamGb": 7,
       "estimatedLoadGb": 3.2,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Chat",
       "ollamaCommand": "ollama run phi3:mini"
     },
@@ -189,6 +265,11 @@
       "minRamGb": 20,
       "estimatedLoadGb": 11,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Quality",
       "ollamaCommand": "ollama run phi3:medium"
     },
@@ -200,6 +281,11 @@
       "minRamGb": 22,
       "estimatedLoadGb": 11.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Quality",
       "ollamaCommand": "ollama run phi4:14b-q4_K_M"
     },
@@ -211,6 +297,11 @@
       "minRamGb": 10,
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding",
       "ollamaCommand": "ollama run qwen2.5-coder:7b"
     },
@@ -222,6 +313,11 @@
       "minRamGb": 22,
       "estimatedLoadGb": 11,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding",
       "ollamaCommand": "ollama run qwen2.5-coder:14b"
     },
@@ -233,6 +329,11 @@
       "minRamGb": 3,
       "estimatedLoadGb": 1,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat",
       "ollamaCommand": "ollama run llama3.2:1b-instruct-q4_K_M"
     },
@@ -244,6 +345,11 @@
       "minRamGb": 26,
       "estimatedLoadGb": 17,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Quality",
       "ollamaCommand": "ollama run mistral-small:22b"
     },
@@ -255,6 +361,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
     },
@@ -266,6 +373,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Chat",
       "ollamaCommand": null
     },
@@ -277,6 +385,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Quality",
       "ollamaCommand": null
     },
@@ -288,6 +397,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Analysis",
       "ollamaCommand": null
     },
@@ -299,6 +409,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
     },
@@ -310,6 +421,11 @@
       "minRamGb": 2,
       "estimatedLoadGb": 0.8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Mobile",
       "ollamaCommand": "ollama run qwen2.5:0.5b-instruct-q4_K_M"
     },
@@ -321,6 +437,11 @@
       "minRamGb": 3,
       "estimatedLoadGb": 1,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Mobile",
       "ollamaCommand": "ollama run gemma3:1b"
     },
@@ -332,6 +453,11 @@
       "minRamGb": 7,
       "estimatedLoadGb": 3.2,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Chat",
       "ollamaCommand": "ollama run phi4-mini:3.8b"
     },
@@ -343,6 +469,11 @@
       "minRamGb": 1,
       "estimatedLoadGb": 0.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Embedded",
       "ollamaCommand": "ollama run smollm2:360m"
     },
@@ -354,6 +485,11 @@
       "minRamGb": 48,
       "estimatedLoadGb": 42,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding",
       "ollamaCommand": "ollama run llama3.3:70b-instruct-q4_K_M"
     },
@@ -365,6 +501,11 @@
       "minRamGb": 256,
       "estimatedLoadGb": 243,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Reasoning, Coding",
       "ollamaCommand": "ollama run llama3.1:405b-instruct-q4_K_M"
     },
@@ -376,6 +517,11 @@
       "minRamGb": 400,
       "estimatedLoadGb": 380,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Coding",
       "ollamaCommand": "ollama run deepseek-r1:671b-q4_K_M"
     },
@@ -387,6 +533,11 @@
       "minRamGb": 12,
       "estimatedLoadGb": 6.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run qwen3:8b-q4_K_M"
     },
@@ -398,6 +549,11 @@
       "minRamGb": 20,
       "estimatedLoadGb": 11,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Quality",
       "ollamaCommand": "ollama run qwen3:14b-q4_K_M"
     },
@@ -409,6 +565,11 @@
       "minRamGb": 28,
       "estimatedLoadGb": 22,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding",
       "ollamaCommand": "ollama run qwen3:30b"
     },
@@ -420,6 +581,11 @@
       "minRamGb": 8,
       "estimatedLoadGb": 3.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run gemma3:4b"
     },
@@ -431,6 +597,11 @@
       "minRamGb": 18,
       "estimatedLoadGb": 9.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Quality",
       "ollamaCommand": "ollama run gemma3:12b"
     },
@@ -442,6 +613,11 @@
       "minRamGb": 28,
       "estimatedLoadGb": 21,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding",
       "ollamaCommand": "ollama run gemma3:27b"
     },
@@ -453,6 +629,11 @@
       "minRamGb": 10,
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Coding",
       "ollamaCommand": "ollama run deepseek-r1:7b"
     },
@@ -464,6 +645,11 @@
       "minRamGb": 22,
       "estimatedLoadGb": 11,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Quality",
       "ollamaCommand": "ollama run deepseek-r1:14b"
     },
@@ -475,6 +661,11 @@
       "minRamGb": 48,
       "estimatedLoadGb": 42,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Quality",
       "ollamaCommand": "ollama run deepseek-r1:70b"
     },
@@ -486,6 +677,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
     },
@@ -497,6 +689,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Chat, Speed",
       "ollamaCommand": null
     },
@@ -508,6 +701,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Quality",
       "ollamaCommand": null
     },
@@ -519,6 +713,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Analysis",
       "ollamaCommand": null
     },
@@ -530,6 +725,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Speed, Chat",
       "ollamaCommand": null
     },
@@ -541,6 +737,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
     },
@@ -552,6 +749,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Reasoning, Quality",
       "ollamaCommand": null
     },
@@ -563,6 +761,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Analysis",
       "ollamaCommand": null
     },
@@ -574,6 +773,11 @@
       "minRamGb": 192,
       "estimatedLoadGb": 130,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Reasoning",
       "ollamaCommand": "ollama run qwen3:235b-a22b-q4_K_M"
     },
@@ -585,6 +789,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 15,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding",
       "ollamaCommand": "ollama run mistral-small3.1:24b"
     },
@@ -596,6 +805,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
     },
@@ -607,6 +817,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Reasoning, Quality",
       "ollamaCommand": null
     },
@@ -618,6 +829,11 @@
       "minRamGb": 2,
       "estimatedLoadGb": 0.8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Mobile",
       "ollamaCommand": "ollama run qwen3.5:0.8b"
     },
@@ -629,6 +845,11 @@
       "minRamGb": 4,
       "estimatedLoadGb": 1.8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Edge tasks",
       "ollamaCommand": "ollama run qwen3.5:2b"
     },
@@ -640,6 +861,11 @@
       "minRamGb": 8,
       "estimatedLoadGb": 3.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Agents, Multimodal",
       "ollamaCommand": "ollama run qwen3.5:4b"
     },
@@ -651,6 +877,11 @@
       "minRamGb": 14,
       "estimatedLoadGb": 7,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding, Reasoning",
       "ollamaCommand": "ollama run qwen3.5:9b"
     },
@@ -662,6 +893,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 20,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Coding, Agent scenarios",
       "ollamaCommand": "ollama run qwen3.5:35b-a3b"
     },
@@ -673,6 +909,11 @@
       "minRamGb": 20,
       "estimatedLoadGb": 16,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding, Complex reasoning",
       "ollamaCommand": "ollama run qwen3.5:27b"
     },
@@ -684,6 +925,11 @@
       "minRamGb": 96,
       "estimatedLoadGb": 72,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Frontier-level reasoning, Complex tasks",
       "ollamaCommand": "ollama run qwen3.5:122b-a10b"
     },
@@ -695,6 +941,11 @@
       "minRamGb": 16,
       "estimatedLoadGb": 14,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Local AI agents, privacy-first tool calling, MCP workflows",
       "ollamaCommand": "ollama run lfm2:24b-a2b"
     },
@@ -706,6 +957,11 @@
       "minRamGb": 10,
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "On-device agents, tool calling, multilingual chat",
       "ollamaCommand": "ollama run lfm2.5:8b-a1b-q4_K_M"
     },
@@ -717,6 +973,11 @@
       "minRamGb": 6,
       "estimatedLoadGb": 2,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Lightweight chat, classification, edge tasks",
       "ollamaCommand": "ollama run granite4.1:3b"
     },
@@ -728,6 +989,11 @@
       "minRamGb": 12,
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Enterprise assistant, tool calling, instruction following",
       "ollamaCommand": "ollama run granite4.1:8b"
     },
@@ -739,6 +1005,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 18,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Quality, Long context",
       "ollamaCommand": "ollama run qwen3.6:27b"
     },
@@ -750,6 +1021,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 22,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Coding, Agents",
       "ollamaCommand": "ollama run qwen3.6:35b-a3b"
     },
@@ -761,6 +1037,11 @@
       "minRamGb": 32,
       "estimatedLoadGb": 20,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding, Multimodal",
       "ollamaCommand": "ollama run gemma4:31b"
     },
@@ -772,6 +1053,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 16,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding, Multimodal",
       "ollamaCommand": "ollama run gemma4:26b"
     },
@@ -783,6 +1069,11 @@
       "minRamGb": 8,
       "estimatedLoadGb": 4,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "On-device, Mobile, Chat",
       "ollamaCommand": "ollama run gemma4:e4b"
     },
@@ -794,6 +1085,11 @@
       "minRamGb": 4,
       "estimatedLoadGb": 2.3,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "IoT, Mobile, Edge",
       "ollamaCommand": "ollama run gemma4:e2b"
     },
@@ -805,6 +1101,11 @@
       "minRamGb": 80,
       "estimatedLoadGb": 67,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Long context, Quality, Multimodal",
       "ollamaCommand": "ollama run llama4:scout"
     },
@@ -816,6 +1117,11 @@
       "minRamGb": 256,
       "estimatedLoadGb": 245,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Frontier quality, Long context",
       "ollamaCommand": "ollama run llama4:maverick"
     },
@@ -827,6 +1133,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Quality, Tool calling",
       "ollamaCommand": null
     },
@@ -838,6 +1145,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Reasoning, Coding, Long context",
       "ollamaCommand": null
     },
@@ -849,6 +1157,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Frontier reasoning, Coding",
       "ollamaCommand": null
     },
@@ -860,6 +1169,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Agentic tasks",
       "ollamaCommand": null
     },
@@ -871,6 +1181,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Reasoning, Long context",
       "ollamaCommand": null
     },
@@ -882,6 +1193,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Quality, Reasoning",
       "ollamaCommand": null
     },
@@ -893,6 +1205,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Agentic, Reasoning",
       "ollamaCommand": null
     },
@@ -904,6 +1217,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Quality, Reasoning, Multimodal",
       "ollamaCommand": null
     },
@@ -915,6 +1229,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Multimodal, Long context, Quality",
       "ollamaCommand": null
     },
@@ -926,6 +1241,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Reasoning, Real-time data, Coding",
       "ollamaCommand": null
     },
@@ -937,6 +1253,11 @@
       "minRamGb": 16,
       "estimatedLoadGb": 8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding, Multimodal",
       "ollamaCommand": "ollama run gemma4:12b"
     },
@@ -948,6 +1269,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Agentic, Reasoning",
       "ollamaCommand": null
     },
@@ -959,6 +1281,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Reasoning, Agentic",
       "ollamaCommand": null
     },
@@ -970,6 +1293,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Agentic tasks",
       "ollamaCommand": null
     },
@@ -981,6 +1305,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Coding, Agentic, Long context",
       "ollamaCommand": null
     },
@@ -992,6 +1317,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Multimodal, Agentic, Vision",
       "ollamaCommand": null
     },
@@ -1003,6 +1329,7 @@
       "minRamGb": 0,
       "estimatedLoadGb": 0,
       "runsLocally": false,
+      "runtimes": [],
       "bestFor": "Reasoning, Agentic, Long context",
       "ollamaCommand": null
     },
@@ -1014,6 +1341,11 @@
       "minRamGb": 32,
       "estimatedLoadGb": 24,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Math, Agentic tasks",
       "ollamaCommand": "ollama run nemotron-cascade-2:30b"
     },
@@ -1025,6 +1357,11 @@
       "minRamGb": 32,
       "estimatedLoadGb": 23,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Agentic coding, long-horizon software engineering",
       "ollamaCommand": "ollama run laguna-xs.2:q4_K_M"
     },
@@ -1036,6 +1373,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 19,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Agentic coding, repo-scale software engineering",
       "ollamaCommand": "ollama run north-mini-code-1.0:q4_K_M"
     },
@@ -1047,6 +1389,11 @@
       "minRamGb": 96,
       "estimatedLoadGb": 65.4,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Coding, Agents",
       "ollamaCommand": "ollama run gpt-oss:120b"
     },
@@ -1058,6 +1405,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 13.8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding, Reasoning",
       "ollamaCommand": "ollama run gpt-oss:20b"
     },
@@ -1069,6 +1421,11 @@
       "minRamGb": 72,
       "estimatedLoadGb": 50.4,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding, Long Context",
       "ollamaCommand": "ollama run qwen3-next:80b"
     },
@@ -1080,6 +1437,11 @@
       "minRamGb": 64,
       "estimatedLoadGb": 38.7,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Coding, Agents",
       "ollamaCommand": "ollama run qwen3.6:35b-a3b-q8_0"
     },
@@ -1091,6 +1453,11 @@
       "minRamGb": 64,
       "estimatedLoadGb": 38.7,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Reasoning, Coding, Agent scenarios",
       "ollamaCommand": "ollama run qwen3.5:35b-a3b-q8_0"
     },
@@ -1102,6 +1469,11 @@
       "minRamGb": 16,
       "estimatedLoadGb": 10.7,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding, Reasoning",
       "ollamaCommand": "ollama run qwen3.5:9b-q8_0"
     },
@@ -1113,6 +1485,11 @@
       "minRamGb": 48,
       "estimatedLoadGb": 30,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Quality, Long context",
       "ollamaCommand": "ollama run qwen3.6:27b-q8_0"
     },
@@ -1124,6 +1501,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 12.8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding, Multimodal",
       "ollamaCommand": "ollama run gemma4:12b-it-q8_0"
     },
@@ -1135,6 +1517,11 @@
       "minRamGb": 48,
       "estimatedLoadGb": 28.1,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding, Multimodal",
       "ollamaCommand": "ollama run gemma4:26b-a4b-it-q8_0"
     },
@@ -1146,6 +1533,11 @@
       "minRamGb": 128,
       "estimatedLoadGb": 84.8,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Chat, Coding, Long Context",
       "ollamaCommand": "ollama run qwen3-next:80b-a3b-instruct-q8_0"
     },
@@ -1157,6 +1549,11 @@
       "minRamGb": 24,
       "estimatedLoadGb": 15.9,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Coding, Quality",
       "ollamaCommand": "ollama run qwen3:14b-q8_0"
     },
@@ -1168,6 +1565,11 @@
       "minRamGb": 128,
       "estimatedLoadGb": 75,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding",
       "ollamaCommand": "ollama run llama3.3:70b-instruct-q8_0"
     },
@@ -1179,6 +1581,11 @@
       "minRamGb": 96,
       "estimatedLoadGb": 57.9,
       "runsLocally": true,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
       "bestFor": "Quality, Coding",
       "ollamaCommand": "ollama run llama3.3:70b-instruct-q6_K"
     }
