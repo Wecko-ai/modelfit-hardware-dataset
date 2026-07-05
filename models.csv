@@ -89,6 +89,7 @@ Kimi K2.7-Code,Kimi,1000,API,0,0,false,true,,"Coding, Agentic tasks",
 MiniMax M3,MiniMax,428,API,0,0,false,true,,"Coding, Agentic, Long context",
 Qwen3.7-Plus,Qwen,,API,0,0,false,false,,"Multimodal, Agentic, Vision",
 NVIDIA Nemotron 3 Ultra,Nemotron,550,API,0,0,false,true,,"Reasoning, Agentic, Long context",
+Xiaomi MiMo-V2-Flash,MiMo,309,API,0,0,false,true,,"Reasoning, Coding, Agentic tasks",
 NVIDIA Nemotron Cascade 2 30B-A3B,Nemotron,30,Q6_K,32,24,true,true,ollama|llama.cpp|lm-studio,"Reasoning, Math, Agentic tasks",ollama run nemotron-cascade-2:30b
 Poolside Laguna XS.2,Laguna,33,Q4_K_M,32,23,true,true,ollama|llama.cpp|lm-studio,"Agentic coding, long-horizon software engineering",ollama run laguna-xs.2:q4_K_M
 Cohere North Mini Code,North,30,Q4_K_M,24,19,true,true,ollama|llama.cpp|lm-studio,"Agentic coding, repo-scale software engineering",ollama run north-mini-code-1.0:q4_K_M

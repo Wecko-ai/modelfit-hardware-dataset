@@ -26,6 +26,7 @@ is **<https://modelfit.io/api/dataset/>**.
 - `estimatedLoadGb` — approximate memory footprint at this quantization
 - `runsLocally` — `true` when a registry-verified Ollama build fits at least one consumer RAM tier tracked here (up to 256GB)
 - `openWeights` — `true` when the weights are publicly downloadable. Can be `true` while `runsLocally` is `false`: open-weight giants like NVIDIA Nemotron 3 Ultra (550B, ~190GB at 2-bit) or Kimi K2 exceed every consumer tier
+- `ggufDiy` — `true` when the weights are open and a ~Q4 GGUF (0.6 GB per billion parameters) fits a 256GB-class machine via llama.cpp, but no Ollama build exists (e.g. DeepSeek V4 Flash 284B, Xiaomi MiMo-V2-Flash 309B) — runnable DIY, not scored for local fit
 - `runtimes` — apps the model runs in (`ollama`, `llama.cpp`, `lm-studio`; all local rows are GGUF builds). Pipe-separated in the CSV, empty for cloud rows
 - `bestFor` — primary workloads
 - `ollamaCommand` — exact `ollama run …` command (local models)

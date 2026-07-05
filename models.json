@@ -10,12 +10,12 @@
     "note": "A model fits a device when its estimatedLoadGb is within the memory budget: ~70% of unified memory up to 32GB, scaling linearly to ~85% at 128GB and above (high-RAM Macs can wire more memory to the GPU). Q4_K_M needs roughly 0.6 GB per billion parameters.",
     "fieldSemantics": "runsLocally = a registry-verified Ollama build fits at least one consumer RAM tier tracked here (up to 256GB). openWeights = the weights are publicly downloadable. Some open-weight giants (e.g. NVIDIA Nemotron 3 Ultra, 550B, ~190GB at 2-bit) are openWeights: true but runsLocally: false because no consumer tier fits them."
   },
-  "updated": "2026-07-02",
+  "updated": "2026-07-05",
   "counts": {
-    "models": 106,
+    "models": 107,
     "local": 75,
-    "cloud": 31,
-    "families": 20
+    "cloud": 32,
+    "families": 21
   },
   "models": [
     {
@@ -27,6 +27,7 @@
       "estimatedLoadGb": 1.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -44,6 +45,7 @@
       "estimatedLoadGb": 2.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -61,6 +63,7 @@
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -78,6 +81,7 @@
       "estimatedLoadGb": 11,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -95,6 +99,7 @@
       "estimatedLoadGb": 2.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -112,6 +117,7 @@
       "estimatedLoadGb": 6.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -129,6 +135,7 @@
       "estimatedLoadGb": 8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -146,6 +153,7 @@
       "estimatedLoadGb": 42,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -163,6 +171,7 @@
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -180,6 +189,7 @@
       "estimatedLoadGb": 30,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -197,6 +207,7 @@
       "estimatedLoadGb": 9.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -214,6 +225,7 @@
       "estimatedLoadGb": 1.8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -231,6 +243,7 @@
       "estimatedLoadGb": 7,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -248,6 +261,7 @@
       "estimatedLoadGb": 21,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -265,6 +279,7 @@
       "estimatedLoadGb": 3.2,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -282,6 +297,7 @@
       "estimatedLoadGb": 11,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -299,6 +315,7 @@
       "estimatedLoadGb": 11.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -316,6 +333,7 @@
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -333,6 +351,7 @@
       "estimatedLoadGb": 11,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -350,6 +369,7 @@
       "estimatedLoadGb": 1,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -367,6 +387,7 @@
       "estimatedLoadGb": 17,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -384,6 +405,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
@@ -397,6 +419,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Chat",
       "ollamaCommand": null
@@ -410,6 +433,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Quality",
       "ollamaCommand": null
@@ -423,6 +447,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Analysis",
       "ollamaCommand": null
@@ -436,6 +461,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
@@ -449,6 +475,7 @@
       "estimatedLoadGb": 0.8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -466,6 +493,7 @@
       "estimatedLoadGb": 1,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -483,6 +511,7 @@
       "estimatedLoadGb": 3.2,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -500,6 +529,7 @@
       "estimatedLoadGb": 0.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -517,6 +547,7 @@
       "estimatedLoadGb": 42,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -534,6 +565,7 @@
       "estimatedLoadGb": 243,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -551,6 +583,7 @@
       "estimatedLoadGb": 380,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -568,6 +601,7 @@
       "estimatedLoadGb": 6.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -585,6 +619,7 @@
       "estimatedLoadGb": 11,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -602,6 +637,7 @@
       "estimatedLoadGb": 22,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -619,6 +655,7 @@
       "estimatedLoadGb": 3.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -636,6 +673,7 @@
       "estimatedLoadGb": 9.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -653,6 +691,7 @@
       "estimatedLoadGb": 21,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -670,6 +709,7 @@
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -687,6 +727,7 @@
       "estimatedLoadGb": 11,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -704,6 +745,7 @@
       "estimatedLoadGb": 42,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -721,6 +763,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
@@ -734,6 +777,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Chat, Speed",
       "ollamaCommand": null
@@ -747,6 +791,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Quality",
       "ollamaCommand": null
@@ -760,6 +805,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Analysis",
       "ollamaCommand": null
@@ -773,6 +819,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Speed, Chat",
       "ollamaCommand": null
@@ -786,6 +833,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
@@ -799,6 +847,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Reasoning, Quality",
       "ollamaCommand": null
@@ -812,6 +861,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Analysis",
       "ollamaCommand": null
@@ -825,6 +875,7 @@
       "estimatedLoadGb": 130,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -842,6 +893,7 @@
       "estimatedLoadGb": 15,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -859,6 +911,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Coding",
       "ollamaCommand": null
@@ -872,6 +925,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Reasoning, Quality",
       "ollamaCommand": null
@@ -885,6 +939,7 @@
       "estimatedLoadGb": 0.8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -902,6 +957,7 @@
       "estimatedLoadGb": 1.8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -919,6 +975,7 @@
       "estimatedLoadGb": 3.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -936,6 +993,7 @@
       "estimatedLoadGb": 7,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -953,6 +1011,7 @@
       "estimatedLoadGb": 20,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -970,6 +1029,7 @@
       "estimatedLoadGb": 16,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -987,6 +1047,7 @@
       "estimatedLoadGb": 72,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1004,6 +1065,7 @@
       "estimatedLoadGb": 14,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1021,6 +1083,7 @@
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1038,6 +1101,7 @@
       "estimatedLoadGb": 2,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1055,6 +1119,7 @@
       "estimatedLoadGb": 5.5,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1072,6 +1137,7 @@
       "estimatedLoadGb": 18,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1089,6 +1155,7 @@
       "estimatedLoadGb": 22,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1106,6 +1173,7 @@
       "estimatedLoadGb": 20,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1123,6 +1191,7 @@
       "estimatedLoadGb": 16,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1140,6 +1209,7 @@
       "estimatedLoadGb": 4,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1157,6 +1227,7 @@
       "estimatedLoadGb": 2.3,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1174,6 +1245,7 @@
       "estimatedLoadGb": 67,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1191,6 +1263,7 @@
       "estimatedLoadGb": 245,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1208,6 +1281,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": true,
       "runtimes": [],
       "bestFor": "Coding, Quality, Tool calling",
       "ollamaCommand": null
@@ -1221,6 +1295,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": true,
       "runtimes": [],
       "bestFor": "Reasoning, Coding, Long context",
       "ollamaCommand": null
@@ -1234,6 +1309,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Frontier reasoning, Coding",
       "ollamaCommand": null
@@ -1247,6 +1323,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Agentic tasks",
       "ollamaCommand": null
@@ -1260,6 +1337,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Reasoning, Long context",
       "ollamaCommand": null
@@ -1273,6 +1351,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Quality, Reasoning",
       "ollamaCommand": null
@@ -1286,6 +1365,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Agentic, Reasoning",
       "ollamaCommand": null
@@ -1299,6 +1379,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Quality, Reasoning, Multimodal",
       "ollamaCommand": null
@@ -1312,6 +1393,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Multimodal, Long context, Quality",
       "ollamaCommand": null
@@ -1325,6 +1407,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Reasoning, Real-time data, Coding",
       "ollamaCommand": null
@@ -1338,6 +1421,7 @@
       "estimatedLoadGb": 8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1355,6 +1439,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Agentic, Reasoning",
       "ollamaCommand": null
@@ -1368,6 +1453,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Reasoning, Agentic",
       "ollamaCommand": null
@@ -1381,6 +1467,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Agentic tasks",
       "ollamaCommand": null
@@ -1394,6 +1481,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Coding, Agentic, Long context",
       "ollamaCommand": null
@@ -1407,6 +1495,7 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": false,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Multimodal, Agentic, Vision",
       "ollamaCommand": null
@@ -1420,8 +1509,23 @@
       "estimatedLoadGb": 0,
       "runsLocally": false,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Reasoning, Agentic, Long context",
+      "ollamaCommand": null
+    },
+    {
+      "model": "Xiaomi MiMo-V2-Flash",
+      "family": "MiMo",
+      "params": 309,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "runsLocally": false,
+      "openWeights": true,
+      "ggufDiy": true,
+      "runtimes": [],
+      "bestFor": "Reasoning, Coding, Agentic tasks",
       "ollamaCommand": null
     },
     {
@@ -1433,6 +1537,7 @@
       "estimatedLoadGb": 24,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1450,6 +1555,7 @@
       "estimatedLoadGb": 23,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1467,6 +1573,7 @@
       "estimatedLoadGb": 19,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1484,6 +1591,7 @@
       "estimatedLoadGb": 65.4,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1501,6 +1609,7 @@
       "estimatedLoadGb": 13.8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1518,6 +1627,7 @@
       "estimatedLoadGb": 50.4,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1535,6 +1645,7 @@
       "estimatedLoadGb": 38.7,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1552,6 +1663,7 @@
       "estimatedLoadGb": 38.7,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1569,6 +1681,7 @@
       "estimatedLoadGb": 10.7,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1586,6 +1699,7 @@
       "estimatedLoadGb": 30,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1603,6 +1717,7 @@
       "estimatedLoadGb": 12.8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1620,6 +1735,7 @@
       "estimatedLoadGb": 28.1,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1637,6 +1753,7 @@
       "estimatedLoadGb": 84.8,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1654,6 +1771,7 @@
       "estimatedLoadGb": 15.9,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1671,6 +1789,7 @@
       "estimatedLoadGb": 75,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
@@ -1688,6 +1807,7 @@
       "estimatedLoadGb": 57.9,
       "runsLocally": true,
       "openWeights": true,
+      "ggufDiy": false,
       "runtimes": [
         "ollama",
         "llama.cpp",
