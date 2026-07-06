@@ -24,6 +24,7 @@ is **<https://modelfit.io/api/dataset/>**.
 - `quantization` — e.g. `Q4_K_M`
 - `minRamGb` — minimum unified memory / VRAM to load it
 - `estimatedLoadGb` — approximate memory footprint at this quantization
+- `kvKbPerToken` — exact fp16 KV-cache cost in KB per token for hybrid linear-attention models (Qwen3.5/3.6, Qwen3-Next), computed from the published HF config (`full_attention` layers × kv_heads × head_dim × 2 × 2 bytes; only full-attention layers cache KV). `null` for standard GQA models, whose KV is estimated by size class. Example: Qwen3.6 35B-A3B is 20 KB/token, so a full 262k-token fp16 cache is ~5 GB
 - `runsLocally` — `true` when a registry-verified Ollama build fits at least one consumer RAM tier tracked here (up to 256GB)
 - `openWeights` — `true` when the weights are publicly downloadable. Can be `true` while `runsLocally` is `false`: open-weight giants like NVIDIA Nemotron 3 Ultra (550B, ~190GB at 2-bit) or Kimi K2 exceed every consumer tier
 - `ggufDiy` — `true` when the weights are open and a ~Q4 GGUF (0.6 GB per billion parameters) fits a 256GB-class machine via llama.cpp, but no Ollama build exists (e.g. DeepSeek V4 Flash 284B, Xiaomi MiMo-V2-Flash 309B) — runnable DIY, not scored for local fit
