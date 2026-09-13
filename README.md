@@ -8,6 +8,16 @@ Maintained by **[ModelFit](https://modelfit.io/)**. Browse it as an interactive
 table at **<https://modelfit.io/data/>**; the canonical machine-readable source
 is **<https://modelfit.io/api/dataset/>**.
 
+Mirrors: **Hugging Face** — <https://huggingface.co/datasets/modelfit/modelfit-hardware-dataset>
+(`load_dataset` ready).
+
+```python
+from datasets import load_dataset
+
+ds = load_dataset("modelfit/modelfit-hardware-dataset", split="train")
+ds.filter(lambda r: r["runsLocally"] and r["minRamGb"] <= 16).to_pandas()
+```
+
 ## Files
 
 | File | What it is |
@@ -15,6 +25,7 @@ is **<https://modelfit.io/api/dataset/>**.
 | [`models.json`](models.json) | Full export with metadata, methodology, and counts |
 | [`models.csv`](models.csv) | Flat one-row-per-model table |
 | [`generate.mjs`](generate.mjs) | Regenerates both files from the live endpoint |
+| [`hf-card.md`](hf-card.md) + [`publish-hf.sh`](publish-hf.sh) | Hugging Face dataset card + one-command Hub sync |
 
 ## Columns
 
