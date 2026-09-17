@@ -95,6 +95,7 @@ Llama 4 Maverick,Llama,400,Q4_K_M,320,245,,true,true,false,ollama|llama.cpp|lm-s
 Mistral Medium 3.5,Mistral,128,API,0,0,,false,true,true,,"Coding, Quality, Tool calling",
 DeepSeek V4 Flash 0731,DeepSeek,284,API,0,0,,false,true,true,,"Reasoning, Coding, Long context",
 DeepSeek V4 Pro,DeepSeek,1600,API,0,0,,false,true,false,,"Frontier reasoning, Coding",
+DeepSeek V4.1 Flash,DeepSeek,552,API,0,0,,false,true,false,,"Agentic coding, Reasoning, Long context, Vision",
 Kimi K2.6,Kimi,1000,API,0,0,,false,true,false,,"Coding, Agentic tasks",
 GLM-5.1,Zhipu,744,API,0,0,,false,true,false,,"Coding, Reasoning, Long context",
 Claude Opus 4.7,Claude,,API,0,0,,false,false,false,,"Coding, Quality, Reasoning",
@@ -132,11 +133,12 @@ Laguna S 2.1,Laguna,118,Q4_K_M,128,96,,true,true,false,ollama|llama.cpp|lm-studi
 Ornith 1.0 9B,Ornith,9,Q4_K_M,8,5.6,,true,true,false,ollama|llama.cpp|lm-studio,Agentic coding on small machines,ollama run ornith:9b
 Ornith 1.0 35B,Ornith,35,Q4_K_M,32,21.2,,true,true,false,ollama|llama.cpp|lm-studio,Agentic coding,ollama run ornith:35b
 Qwen3.8-Flash-Next,Qwen,125,IQ1_S,192,123,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Reasoning, Multimodal",
+Qwen3.8 2.4T A95B,Qwen,2400,API,0,0,,false,true,false,,"Frontier reasoning, Agentic coding",
 Granite 4.2 3B,Granite,3.7,Q4_K_M,4,2.1,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run granite4.2:3b
 Granite 4.2 8B,Granite,8.8,Q4_K_M,8,5,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run granite4.2:8b
 Granite 4.2 30B,Granite,29.3,Q4_K_M,24,16.5,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Chat",ollama run granite4.2:30b
 Nemotron 3.5 Lightning 30B-A3B,Nemotron,30,Q4_K_M,36,23.7,6,true,true,false,ollama|llama.cpp|lm-studio,"Agentic, Coding, Long context",ollama run nemotron-3.5-lightning:30b
-Muse Glimmer 30B,Muse,29.8,Q4_K_M,24,16.9,,true,true,false,ollama|llama.cpp|lm-studio,Chat,ollama run muse-glimmer:30b
-MiniCPM-V 4.5 8B,MiniCPM,8.7,Q4_K_M,8,5.7,,true,true,false,ollama|llama.cpp|lm-studio,"Vision, Multimodal",ollama run minicpm-v4.5:8b
+Muse Glimmer 30B,Muse,29.8,Q4_K_M,32,16.9,,true,true,false,ollama|llama.cpp|lm-studio,Chat,ollama run muse-glimmer:30b
+MiniCPM-V 4.5 8B,MiniCPM,8.7,Q4_K_M,12,5.7,,true,true,false,ollama|llama.cpp|lm-studio,"Vision, Multimodal",ollama run minicpm-v4.5:8b
 GLM-5.3,Zhipu,753,API,0,0,,false,true,false,,"Coding, Reasoning, Agentic",
 GLM-5.3 Flash,Zhipu,321,API,0,0,,false,true,true,,"Chat, Coding",
