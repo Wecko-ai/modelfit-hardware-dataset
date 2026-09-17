@@ -10,11 +10,11 @@
     "note": "A model fits a device when its estimatedLoadGb is within the memory budget: ~70% of unified memory up to 32GB, scaling linearly to ~85% at 128GB and above (high-RAM Macs can wire more memory to the GPU). Q4_K_M needs roughly 0.6 GB per billion parameters.",
     "fieldSemantics": "runsLocally = a registry-verified Ollama build fits at least one consumer RAM tier tracked here (up to 256GB). openWeights = the weights are publicly downloadable. Some open-weight giants (e.g. NVIDIA Nemotron 3 Ultra, 550B, ~190GB at 2-bit) are openWeights: true but runsLocally: false because no consumer tier fits them."
   },
-  "updated": "2026-09-03",
+  "updated": "2026-09-18",
   "counts": {
-    "models": 141,
+    "models": 143,
     "local": 106,
-    "cloud": 35,
+    "cloud": 37,
     "families": 24
   },
   "models": [
@@ -1771,6 +1771,21 @@
       "ollamaCommand": null
     },
     {
+      "model": "DeepSeek V4.1 Flash",
+      "family": "DeepSeek",
+      "params": 552,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "kvKbPerToken": null,
+      "runsLocally": false,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [],
+      "bestFor": "Agentic coding, Reasoning, Long context, Vision",
+      "ollamaCommand": null
+    },
+    {
       "model": "Kimi K2.6",
       "family": "Kimi",
       "params": 1000,
@@ -2414,6 +2429,21 @@
       "ollamaCommand": null
     },
     {
+      "model": "Qwen3.8 2.4T A95B",
+      "family": "Qwen",
+      "params": 2400,
+      "quantization": "API",
+      "minRamGb": 0,
+      "estimatedLoadGb": 0,
+      "kvKbPerToken": null,
+      "runsLocally": false,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [],
+      "bestFor": "Frontier reasoning, Agentic coding",
+      "ollamaCommand": null
+    },
+    {
       "model": "Granite 4.2 3B",
       "family": "Granite",
       "params": 3.7,
@@ -2494,7 +2524,7 @@
       "family": "Muse",
       "params": 29.8,
       "quantization": "Q4_K_M",
-      "minRamGb": 24,
+      "minRamGb": 32,
       "estimatedLoadGb": 16.9,
       "kvKbPerToken": null,
       "runsLocally": true,
@@ -2513,7 +2543,7 @@
       "family": "MiniCPM",
       "params": 8.7,
       "quantization": "Q4_K_M",
-      "minRamGb": 8,
+      "minRamGb": 12,
       "estimatedLoadGb": 5.7,
       "kvKbPerToken": null,
       "runsLocally": true,
