@@ -132,7 +132,7 @@ Laguna XS 2.1,Laguna,33,Q4_K_M,32,20.3,,true,true,false,ollama|llama.cpp|lm-stud
 Laguna S 2.1,Laguna,118,Q4_K_M,128,96,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Long-horizon tasks",ollama run laguna-s-2.1:q4_K_M
 Ornith 1.0 9B,Ornith,9,Q4_K_M,8,5.6,,true,true,false,ollama|llama.cpp|lm-studio,Agentic coding on small machines,ollama run ornith:9b
 Ornith 1.0 35B,Ornith,35,Q4_K_M,32,21.2,,true,true,false,ollama|llama.cpp|lm-studio,Agentic coding,ollama run ornith:35b
-Qwen3.8-Flash-Next,Qwen,125,IQ1_S,192,123,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Reasoning, Multimodal",
+Qwen3.8-Flash-Next,Qwen,125,Q4_K_XL,192,111.3,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Reasoning, Multimodal",
 Qwen3.8 2.4T A95B,Qwen,2400,API,0,0,,false,true,false,,"Frontier reasoning, Agentic coding",
 Granite 4.2 3B,Granite,3.7,Q4_K_M,4,2.1,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run granite4.2:3b
 Granite 4.2 8B,Granite,8.8,Q4_K_M,8,5,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run granite4.2:8b
@@ -142,3 +142,16 @@ Muse Glimmer 30B,Muse,29.8,Q4_K_M,32,16.9,,true,true,false,ollama|llama.cpp|lm-s
 MiniCPM-V 4.5 8B,MiniCPM,8.7,Q4_K_M,12,5.7,,true,true,false,ollama|llama.cpp|lm-studio,"Vision, Multimodal",ollama run minicpm-v4.5:8b
 GLM-5.3,Zhipu,753,API,0,0,,false,true,false,,"Coding, Reasoning, Agentic",
 GLM-5.3 Flash,Zhipu,321,API,0,0,,false,true,true,,"Chat, Coding",
+GLM-4.7-Flash 30B-A3B,Zhipu,30,Q4_K_M,32,19,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Agentic tasks, Reasoning",ollama run glm-4.7-flash
+Nemotron 3 Super 120B-A12B,Nemotron,120,Q4_K_M,128,86.8,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic workflows, Long context, Reasoning",ollama run nemotron-3-super:120b
+Olmo 3.1 32B Instruct,Olmo,32,Q4_K_M,32,19.5,,true,true,false,ollama|llama.cpp|lm-studio,"General chat, Research, Fully open",ollama run olmo-3.1:32b
+MiMo-V2.6-Distill-Qwen-9B,MiMo,9,Q4_K_M,16,5.8,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Small machines",
+Ling-3.0-flash,Ling,124,Q4_K_M,128,77.8,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Long context, Reasoning",
+Xiaomi MiMo-V2.6-Flash,MiMo,309,API,0,0,,false,true,true,,"Agentic coding, Multimodal, Long context",
+Xiaomi MiMo-V2.6-Pro,MiMo,1020,API,0,0,,false,true,false,,"Frontier agentic coding, Multimodal",
+Devstral Small 2 24B,Mistral,24,Q4_K_M,24,15.2,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Software engineering",ollama run devstral-small-2:24b
+Devstral 2 123B,Mistral,123,Q4_K_M,96,74.9,,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Software engineering",ollama run devstral-2:123b
+Ministral 3 3B,Mistral,3.4,Q4_K_M,6,3,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Vision, Edge",ollama run ministral-3:3b
+Ministral 3 8B,Mistral,8.4,Q4_K_M,12,6,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding, Vision",ollama run ministral-3:8b
+Ministral 3 14B,Mistral,13.5,Q4_K_M,16,9.1,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Reasoning, Vision",ollama run ministral-3:14b
+Inkling Small,Inkling,276,API,0,0,,false,true,true,,"Agentic coding, Multimodal, Reasoning",
