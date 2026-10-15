@@ -24,7 +24,7 @@ ds.filter(lambda r: r["runsLocally"] and r["minRamGb"] <= 16).to_pandas()
 |------|------------|
 | [`models.json`](models.json) | Full export with metadata, methodology, and counts |
 | [`models.csv`](models.csv) | Flat one-row-per-model table |
-| [`generate.mjs`](generate.mjs) | Regenerates both files from the live endpoint |
+| [`generate.mjs`](generate.mjs) | Regenerates both files from the live endpoint, plus the counts in the Hugging Face card |
 | [`hf-card.md`](hf-card.md) + [`publish-hf.sh`](publish-hf.sh) | Hugging Face dataset card + one-command Hub sync |
 
 ## Columns

@@ -1,7 +1,7 @@
 // Regenerate models.json + models.csv from the live ModelFit dataset endpoint.
 // Usage: node generate.mjs   (then commit the changes)
 // The canonical source is https://modelfit.io/api/dataset/ (CC BY 4.0).
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 
 const SRC = 'https://modelfit.io/api/dataset/';
 const UA = 'modelfit-hardware-dataset/1.0 (+https://modelfit.io/data/)';
@@ -26,4 +26,13 @@ const csv = [cols.join(',')]
   .join('\n');
 writeFileSync('models.csv', csv + '\n');
 
-console.log(`Wrote ${data.models.length} models (updated ${data.updated}) to models.json + models.csv`);
+// Keep the headline counts of the Hugging Face card in step with the data.
+const total = data.models.length;
+const local = data.models.filter((r) => r.runsLocally).length;
+const closed = data.models.filter((r) => !r.runsLocally && !r.openWeights).length;
+const families = new Set(data.models.map((r) => r.family)).size;
+const line = `- **${total} models** across ${families} families (${local} with a registry-verified local build, ${total - local - closed} open-weight models without a consumer-tier Ollama build, ${closed} closed cloud APIs tracked for comparison)`;
+const card = readFileSync('hf-card.md', 'utf8');
+writeFileSync('hf-card.md', card.replace(/^- \*\*\d+ models\*\* across .*$/m, line));
+
+console.log(`Wrote ${total} models (updated ${data.updated}) to models.json + models.csv + hf-card.md`);
