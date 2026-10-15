@@ -10,7 +10,7 @@
     "note": "A model fits a device when its estimatedLoadGb is within the memory budget: ~70% of unified memory up to 32GB, scaling linearly to ~85% at 128GB and above (high-RAM Macs can wire more memory to the GPU). Q4_K_M needs roughly 0.6 GB per billion parameters.",
     "fieldSemantics": "runsLocally = a registry-verified Ollama build fits at least one consumer RAM tier tracked here (up to 256GB). openWeights = the weights are publicly downloadable. Some open-weight giants (e.g. NVIDIA Nemotron 3 Ultra, 550B, ~190GB at 2-bit) are openWeights: true but runsLocally: false because no consumer tier fits them."
   },
-  "updated": "2026-10-03",
+  "updated": "2026-10-13",
   "counts": {
     "models": 156,
     "local": 116,
@@ -206,7 +206,7 @@
         "lm-studio"
       ],
       "bestFor": "Chat, Coding",
-      "ollamaCommand": "ollama run mistral:7b-instruct-q4_K_M"
+      "ollamaCommand": "ollama run mistral:7b-instruct-v0.3-q4_K_M"
     },
     {
       "model": "Mistral 7B Instruct (Q5)",
@@ -225,7 +225,7 @@
         "lm-studio"
       ],
       "bestFor": "Chat, Coding",
-      "ollamaCommand": "ollama run mistral:7b-instruct-q5_K_M"
+      "ollamaCommand": "ollama run mistral:7b-instruct-v0.3-q5_K_M"
     },
     {
       "model": "Mistral 7B Instruct (Q8)",
@@ -244,7 +244,7 @@
         "lm-studio"
       ],
       "bestFor": "Chat, Coding",
-      "ollamaCommand": "ollama run mistral:7b-instruct-q8_0"
+      "ollamaCommand": "ollama run mistral:7b-instruct-v0.3-q8_0"
     },
     {
       "model": "Mixtral 8x7B Instruct",
@@ -377,7 +377,7 @@
         "lm-studio"
       ],
       "bestFor": "Coding, Chat",
-      "ollamaCommand": "ollama run phi3:mini"
+      "ollamaCommand": "ollama run phi3:3.8b-mini-4k-instruct-q4_K_M"
     },
     {
       "model": "Phi-3 Medium 14B",
@@ -396,7 +396,7 @@
         "lm-studio"
       ],
       "bestFor": "Coding, Quality",
-      "ollamaCommand": "ollama run phi3:medium"
+      "ollamaCommand": "ollama run phi3:14b-medium-4k-instruct-q4_K_M"
     },
     {
       "model": "Phi-4 14B",
@@ -832,7 +832,7 @@
         "lm-studio"
       ],
       "bestFor": "Quality, Coding",
-      "ollamaCommand": "ollama run qwen3:30b"
+      "ollamaCommand": "ollama run qwen3:30b-a3b-q4_K_M"
     },
     {
       "model": "Qwen3 30B (Q8)",
