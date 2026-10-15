@@ -8,17 +8,17 @@ Llama 3.1 8B Instruct,Llama,8,Q4_K_M,12,6.5,,true,true,false,ollama|llama.cpp|lm
 Llama 3.1 8B Instruct (Q8),Llama,8,Q8_0,16,8,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run llama3.1:8b-instruct-q8_0
 Llama 3.1 8B Instruct (Q5),Llama,8,Q5_K_M,12,8,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run llama3.1:8b-instruct-q5_K_M
 Llama 3.1 70B Instruct,Llama,70,Q4_K_M,64,42,,true,true,false,ollama|llama.cpp|lm-studio,"Quality, Coding",ollama run llama3.1:70b-instruct-q4_K_M
-Mistral 7B Instruct,Mistral,7,Q4_K_M,8,5.5,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run mistral:7b-instruct-q4_K_M
-Mistral 7B Instruct (Q5),Mistral,7,Q5_K_M,8,4.8,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run mistral:7b-instruct-q5_K_M
-Mistral 7B Instruct (Q8),Mistral,7,Q8_0,16,7.2,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run mistral:7b-instruct-q8_0
+Mistral 7B Instruct,Mistral,7,Q4_K_M,8,5.5,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run mistral:7b-instruct-v0.3-q4_K_M
+Mistral 7B Instruct (Q5),Mistral,7,Q5_K_M,8,4.8,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run mistral:7b-instruct-v0.3-q5_K_M
+Mistral 7B Instruct (Q8),Mistral,7,Q8_0,16,7.2,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run mistral:7b-instruct-v0.3-q8_0
 Mixtral 8x7B Instruct,Mistral,46.7,Q4_K_M,48,30,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Quality",ollama run mixtral:8x7b
 Mistral Nemo 12B,Mistral,12,Q4_K_M,16,9.5,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Translation",ollama run mistral-nemo:12b
 Mistral Nemo 12B (Q8),Mistral,12,Q8_0,24,12.1,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Translation",ollama run mistral-nemo:12b-instruct-2407-q8_0
 Gemma 2 2B Instruct,Gemma,2,Q4_K_M,4,1.8,,true,true,false,ollama|llama.cpp|lm-studio,Chat,ollama run gemma2:2b-instruct-q4_K_M
 Gemma 2 9B Instruct,Gemma,9,Q4_K_M,12,7,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run gemma2:9b-instruct-q4_K_M
 Gemma 2 27B Instruct,Gemma,27,Q4_K_M,32,21,,true,true,false,ollama|llama.cpp|lm-studio,"Quality, Coding",ollama run gemma2:27b-instruct-q4_K_M
-Phi-3 Mini 3.8B,Phi,3.8,Q4_K_M,6,3.2,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Chat",ollama run phi3:mini
-Phi-3 Medium 14B,Phi,14,Q4_K_M,16,11,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Quality",ollama run phi3:medium
+Phi-3 Mini 3.8B,Phi,3.8,Q4_K_M,6,3.2,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Chat",ollama run phi3:3.8b-mini-4k-instruct-q4_K_M
+Phi-3 Medium 14B,Phi,14,Q4_K_M,16,11,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Quality",ollama run phi3:14b-medium-4k-instruct-q4_K_M
 Phi-4 14B,Phi,14,Q4_K_M,24,11.5,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Quality",ollama run phi4:14b-q4_K_M
 Phi-4 14B (Q8),Phi,14,Q8_0,24,14.5,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Quality",ollama run phi4:14b-q8_0
 Qwen2.5 Coder 7B,Qwen,7,Q4_K_M,8,5.5,,true,true,false,ollama|llama.cpp|lm-studio,Coding,ollama run qwen2.5-coder:7b
@@ -42,7 +42,7 @@ DeepSeek-R1 671B,DeepSeek,671,Q4_K_M,512,380,,true,true,false,ollama|llama.cpp|l
 Qwen3 8B,Qwen,8,Q4_K_M,12,6.5,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run qwen3:8b-q4_K_M
 Qwen3 8B (Q8),Qwen,8,Q8_0,16,8.1,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run qwen3:8b-q8_0
 Qwen3 14B,Qwen,14,Q4_K_M,16,11,,true,true,false,ollama|llama.cpp|lm-studio,"Coding, Quality",ollama run qwen3:14b-q4_K_M
-Qwen3 30B,Qwen,30,Q4_K_M,32,22,,true,true,false,ollama|llama.cpp|lm-studio,"Quality, Coding",ollama run qwen3:30b
+Qwen3 30B,Qwen,30,Q4_K_M,32,22,,true,true,false,ollama|llama.cpp|lm-studio,"Quality, Coding",ollama run qwen3:30b-a3b-q4_K_M
 Qwen3 30B (Q8),Qwen,30,Q8_0,48,30.3,,true,true,false,ollama|llama.cpp|lm-studio,"Quality, Coding",ollama run qwen3:30b-a3b-q8_0
 Gemma 3 4B Instruct,Gemma,4,Q4_K_M,6,3.5,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run gemma3:4b
 Gemma 3 4B Instruct (Q8),Gemma,4,Q8_0,8,3.9,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding",ollama run gemma3:4b-it-q8_0
