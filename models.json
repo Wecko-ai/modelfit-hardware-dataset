@@ -1,7 +1,8 @@
 {
   "name": "ModelFit Local LLM Hardware Compatibility Dataset",
-  "description": "Which local AI models (Ollama) fit which hardware, by parameter size, quantization, and estimated memory load. tok/s and load figures are estimates, not measured benchmarks.",
+  "description": "Which local AI models (Ollama) fit which hardware, by parameter size, quantization, and estimated memory load. tok/s and load figures are estimates, not measured benchmarks. Decode-speed estimates live in the speedEstimates dataset, where methodology.typicalErrorByGroup gives the typical error by backend and model size (the median gap to measured runs on hardware the speed model was not fitted on).",
   "source": "https://modelfit.io/data/",
+  "speedEstimates": "https://modelfit.io/api/dataset/performance/",
   "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
   "attribution": "ModelFit: https://modelfit.io/",
   "methodology": {
