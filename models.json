@@ -11,10 +11,10 @@
     "note": "A model fits a device when its estimatedLoadGb is within the memory budget: ~70% of unified memory up to 32GB, scaling linearly to ~85% at 128GB and above (high-RAM Macs can wire more memory to the GPU). Q4_K_M needs roughly 0.6 GB per billion parameters.",
     "fieldSemantics": "runsLocally = a registry-verified Ollama build fits at least one consumer RAM tier tracked here (up to 256GB). openWeights = the weights are publicly downloadable. Some open-weight giants (e.g. NVIDIA Nemotron 3 Ultra, 550B, ~190GB at 2-bit) are openWeights: true but runsLocally: false because no consumer tier fits them."
   },
-  "updated": "2026-10-13",
+  "updated": "2026-10-21",
   "counts": {
-    "models": 156,
-    "local": 116,
+    "models": 161,
+    "local": 121,
     "cloud": 40,
     "families": 27
   },
@@ -2022,7 +2022,7 @@
       "quantization": "Q6_K",
       "minRamGb": 36,
       "estimatedLoadGb": 24,
-      "kvKbPerToken": null,
+      "kvKbPerToken": 6,
       "runsLocally": true,
       "openWeights": true,
       "ggufDiy": false,
@@ -2430,6 +2430,44 @@
       "ollamaCommand": null
     },
     {
+      "model": "Qwen3.8-Flash-Next (IQ4_XS)",
+      "family": "Qwen",
+      "params": 125,
+      "quantization": "IQ4_XS",
+      "minRamGb": 128,
+      "estimatedLoadGb": 93.7,
+      "kvKbPerToken": null,
+      "runsLocally": true,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "bestFor": "Agentic coding, Reasoning, Multimodal",
+      "ollamaCommand": null
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (Q3)",
+      "family": "Qwen",
+      "params": 125,
+      "quantization": "Q3_K_XL",
+      "minRamGb": 128,
+      "estimatedLoadGb": 90,
+      "kvKbPerToken": null,
+      "runsLocally": true,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "bestFor": "Agentic coding, Reasoning, Multimodal",
+      "ollamaCommand": null
+    },
+    {
       "model": "Qwen3.8 2.4T A95B",
       "family": "Qwen",
       "params": 2400,
@@ -2507,7 +2545,7 @@
       "params": 30,
       "quantization": "Q4_K_M",
       "minRamGb": 36,
-      "estimatedLoadGb": 23.7,
+      "estimatedLoadGb": 25.4,
       "kvKbPerToken": 6,
       "runsLocally": true,
       "openWeights": true,
@@ -2519,6 +2557,25 @@
       ],
       "bestFor": "Agentic, Coding, Long context",
       "ollamaCommand": "ollama run nemotron-3.5-lightning:30b"
+    },
+    {
+      "model": "Nemotron 3.5 Lightning 30B-A3B (IQ4_XS)",
+      "family": "Nemotron",
+      "params": 30,
+      "quantization": "IQ4_XS",
+      "minRamGb": 32,
+      "estimatedLoadGb": 18.9,
+      "kvKbPerToken": 6,
+      "runsLocally": true,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "bestFor": "Agentic, Coding, Long context",
+      "ollamaCommand": null
     },
     {
       "model": "Muse Glimmer 30B",
@@ -2614,7 +2671,7 @@
       "quantization": "Q4_K_M",
       "minRamGb": 128,
       "estimatedLoadGb": 86.8,
-      "kvKbPerToken": null,
+      "kvKbPerToken": 8,
       "runsLocally": true,
       "openWeights": true,
       "ggufDiy": false,
@@ -2625,6 +2682,25 @@
       ],
       "bestFor": "Agentic workflows, Long context, Reasoning",
       "ollamaCommand": "ollama run nemotron-3-super:120b"
+    },
+    {
+      "model": "Nemotron 3 Super 120B-A12B (IQ4_XS)",
+      "family": "Nemotron",
+      "params": 120,
+      "quantization": "IQ4_XS",
+      "minRamGb": 96,
+      "estimatedLoadGb": 64.5,
+      "kvKbPerToken": 8,
+      "runsLocally": true,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "bestFor": "Agentic workflows, Long context, Reasoning",
+      "ollamaCommand": null
     },
     {
       "model": "Olmo 3.1 32B Instruct",
@@ -2671,6 +2747,25 @@
       "quantization": "Q4_K_M",
       "minRamGb": 128,
       "estimatedLoadGb": 77.8,
+      "kvKbPerToken": null,
+      "runsLocally": true,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "bestFor": "Agentic coding, Long context, Reasoning",
+      "ollamaCommand": null
+    },
+    {
+      "model": "Ling-3.0-flash (IQ4_XS)",
+      "family": "Ling",
+      "params": 124,
+      "quantization": "IQ4_XS",
+      "minRamGb": 96,
+      "estimatedLoadGb": 68.7,
       "kvKbPerToken": null,
       "runsLocally": true,
       "openWeights": true,
