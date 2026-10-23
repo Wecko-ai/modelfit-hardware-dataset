@@ -160,3 +160,11 @@ Ministral 3 3B,Mistral,3.4,Q4_K_M,6,3,,true,true,false,ollama|llama.cpp|lm-studi
 Ministral 3 8B,Mistral,8.4,Q4_K_M,12,6,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Coding, Vision",ollama run ministral-3:8b
 Ministral 3 14B,Mistral,13.5,Q4_K_M,16,9.1,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Reasoning, Vision",ollama run ministral-3:14b
 Inkling Small,Inkling,276,API,0,0,,false,true,true,,"Agentic coding, Multimodal, Reasoning",
+Flint 40B-A2.5B,Flint,39.8,NVFP4,36,22.9,28,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Long context",ollama run flint:40b
+Mellum2.1 12B-A2.5B Thinking,Mellum,12.1,Q4_K_M,16,8.1,14,true,true,false,ollama|llama.cpp|lm-studio,"Agentic coding, Small machines",
+Kolibri 1,Kolibri,78.1,Q4_K_M,96,49.8,20,true,true,false,ollama|llama.cpp|lm-studio,"Reasoning, German, Long context",
+Kolibri 1 (IQ4_XS),Kolibri,78.1,IQ4_XS,64,43.6,20,true,true,false,ollama|llama.cpp|lm-studio,"Reasoning, German, Long context",
+AREX-2 27B,AREX,27.4,Q4_K_M,32,17.2,64,true,true,false,ollama|llama.cpp|lm-studio,"Agents, Deep research, Coding",
+Muse Spark Open,Muse,816,API,0,0,,false,true,false,,"Agentic coding, Multimodal, Long context",
+MiniMax M3.1 Flash,MiniMax,428,API,0,0,,false,true,false,,"Coding, Agentic, Computer use",
+Beam 1.0,Beam,501,API,0,0,,false,true,false,,"Agentic coding, Reasoning, Long context",
