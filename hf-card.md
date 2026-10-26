@@ -36,7 +36,7 @@ table at **[modelfit.io/data](https://modelfit.io/data/)**; the canonical
 machine-readable source is
 **[modelfit.io/api/dataset](https://modelfit.io/api/dataset/)**.
 
-- **169 models** across 32 families (126 with a registry-verified local build, 26 open-weight models without a consumer-tier Ollama build, 17 closed cloud APIs tracked for comparison)
+- **172 models** across 32 families (129 with a registry-verified local build, 26 open-weight models without a consumer-tier Ollama build, 17 closed cloud APIs tracked for comparison)
 - **License:** CC BY 4.0: reuse freely, including commercially, with attribution
 - **Updated:** see the `updated` field in `models.json` (regenerated from the live endpoint)
 

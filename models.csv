@@ -168,3 +168,6 @@ AREX-2 27B,AREX,27.4,Q4_K_M,32,17.2,64,true,true,false,ollama|llama.cpp|lm-studi
 Muse Spark Open,Muse,816,API,0,0,,false,true,false,,"Agentic coding, Multimodal, Long context",
 MiniMax M3.1 Flash,MiniMax,428,API,0,0,,false,true,false,,"Coding, Agentic, Computer use",
 Beam 1.0,Beam,501,API,0,0,,false,true,false,,"Agentic coding, Reasoning, Long context",
+NVIDIA Nemotron 3.5 Bolt E4B,Nemotron,4,Q4_K_M,12,7.9,,true,true,false,ollama|llama.cpp|lm-studio,"Voice assistants, Tool calling, Chat",ollama run nemotron-3.5-bolt:e4b
+Granite Switch 4.1 8B,Granite,8.8,Q4_K_M,12,6.4,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Decisions, Safety checks",
+Granite Switch 4.1 30B,Granite,30,Q4_K_M,32,21,,true,true,false,ollama|llama.cpp|lm-studio,"Chat, Decisions, Safety checks",

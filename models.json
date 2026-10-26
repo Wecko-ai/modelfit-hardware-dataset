@@ -11,10 +11,10 @@
     "note": "A model fits a device when its estimatedLoadGb is within the memory budget: ~70% of unified memory up to 32GB, scaling linearly to ~85% at 128GB and above (high-RAM Macs can wire more memory to the GPU). Q4_K_M needs roughly 0.6 GB per billion parameters.",
     "fieldSemantics": "runsLocally = a registry-verified Ollama build fits at least one consumer RAM tier tracked here (up to 256GB). openWeights = the weights are publicly downloadable. Some open-weight giants (e.g. NVIDIA Nemotron 3 Ultra, 550B, ~190GB at 2-bit) are openWeights: true but runsLocally: false because no consumer tier fits them."
   },
-  "updated": "2026-10-24",
+  "updated": "2026-10-26",
   "counts": {
-    "models": 169,
-    "local": 126,
+    "models": 172,
+    "local": 129,
     "cloud": 43,
     "families": 32
   },
@@ -3056,6 +3056,63 @@
       "ggufDiy": false,
       "runtimes": [],
       "bestFor": "Agentic coding, Reasoning, Long context",
+      "ollamaCommand": null
+    },
+    {
+      "model": "NVIDIA Nemotron 3.5 Bolt E4B",
+      "family": "Nemotron",
+      "params": 4,
+      "quantization": "Q4_K_M",
+      "minRamGb": 12,
+      "estimatedLoadGb": 7.9,
+      "kvKbPerToken": null,
+      "runsLocally": true,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "bestFor": "Voice assistants, Tool calling, Chat",
+      "ollamaCommand": "ollama run nemotron-3.5-bolt:e4b"
+    },
+    {
+      "model": "Granite Switch 4.1 8B",
+      "family": "Granite",
+      "params": 8.8,
+      "quantization": "Q4_K_M",
+      "minRamGb": 12,
+      "estimatedLoadGb": 6.4,
+      "kvKbPerToken": null,
+      "runsLocally": true,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "bestFor": "Chat, Decisions, Safety checks",
+      "ollamaCommand": null
+    },
+    {
+      "model": "Granite Switch 4.1 30B",
+      "family": "Granite",
+      "params": 30,
+      "quantization": "Q4_K_M",
+      "minRamGb": 32,
+      "estimatedLoadGb": 21,
+      "kvKbPerToken": null,
+      "runsLocally": true,
+      "openWeights": true,
+      "ggufDiy": false,
+      "runtimes": [
+        "ollama",
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "bestFor": "Chat, Decisions, Safety checks",
       "ollamaCommand": null
     }
   ]
