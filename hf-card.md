@@ -114,5 +114,5 @@ https://modelfit.io/data/
 
 Built and maintained by [ModelFit](https://modelfit.io/). Find the best local
 AI model for your Mac, iPhone, or GPU. Mirrors:
-[GitHub](https://github.com/modelfit/modelfit-hardware-dataset) ·
+[GitHub](https://github.com/modelfit-io/modelfit-hardware-dataset) ·
 [Hugging Face](https://huggingface.co/datasets/modelfit/modelfit-hardware-dataset).
